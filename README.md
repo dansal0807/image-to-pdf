@@ -1,0 +1,1 @@
+O atual projeto é um conversor de imagens (JPG ou PNG) para o formato PDF. Utilizo a biblioteca Pillow, assim como uma interface gráfica para poder facilitar a utilização com o usuário. Para utilizar este programa é preciso ter estas bibliotecas instaladas.
