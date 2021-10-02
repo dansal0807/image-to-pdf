@@ -31,10 +31,22 @@ def getFile ():
 browseButton = tk.Button(text="     Selecione o arquivo    ", command=getFile, bg='green', fg='white', font=('Arial', 12, 'bold'))
 canvas1.create_window(150, 130, window=browseButton)
 
+#pop-up de sucesso:
+def popupmsg(msg):
+    popup = tk.Tk()
+    popup.wm_title("Sucesso")
+    label = tk.Label(popup, text=msg)
+    label.pack(side="top", fill="x", pady=10)
+    B1 = tk.Button(popup, text="Okay", command = popup.destroy)
+    B1.pack(pady=5)
+    popup.mainloop()
+    
+
 #função de conversão:
 def convertpdf ():
     export_file_path = filedialog.asksaveasfilename(defaultextension='.pdf')
     images[0].save(export_file_path, save_all=True, append_images=images)
+    popupmsg("Seu arquivo foi convertido com sucesso!")
 
 saveAsButton = tk.Button(text='Converter para PDF', command=convertpdf, bg='green', fg='white', font=('Arial', 12, 'bold'))
 canvas1.create_window(150, 180, window=saveAsButton)
