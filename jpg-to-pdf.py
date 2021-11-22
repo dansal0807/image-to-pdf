@@ -5,7 +5,7 @@ from tkinter import filedialog, messagebox
 
 #configuração do workspace
 root= tk.Tk()
-canvas1 = tk.Canvas(root, width = 360, height = 330, bg = 'paleturquoise', relief = 'raised')
+canvas1 = tk.Canvas(root, width = 300, height = 330, bg = 'paleturquoise', relief = 'raised')
 canvas1.pack()
 
 label1 = tk.Label(root, text='Conversor de arquivos', bg = 'paleturquoise')
