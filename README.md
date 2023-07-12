@@ -1,6 +1,6 @@
 # Image-To-PDF:
 
-The aim of this project is the transformation of images (specially of books or articles) into PDFs. This code works with the Pillow and Tkinter (a GUI library for python). 
+The aim of this project is the transformation of images (specially of books or articles) into PDFs. This code works with Pillow and Tkinter (a GUI library for python). 
 
 It's important to notice that there are already some projects that work with images into PDFs, but none of them works with multiple files at once, feature implemented by this project.
 
